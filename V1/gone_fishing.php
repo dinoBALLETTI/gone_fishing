@@ -23,7 +23,8 @@ $lake = array(
     new Ruffe(),
     );
 
-    class Gudgeon extends AFish {
+    class Gudgeon extends AFish 
+    {
         function __construct()
         {
             $this->name = "Gudgeon";
@@ -31,7 +32,8 @@ $lake = array(
         }        
     }
     
-    class Minnow extends AFish {
+    class Minnow extends AFish 
+    {
         function __construct()
         {
             $this->name = "Minnow";
@@ -39,12 +41,13 @@ $lake = array(
         }
     }
 
-    class Ruffe extends AFish {
-    function __construct()
+    class Ruffe extends AFish 
     {
+        function __construct()
+        {
         $this->name = "Ruffe";
         $this->weight = (rand (15, 220)/1000);
-    }
+        }
     }
 
     $randomFish = $lake[array_rand($lake)];
