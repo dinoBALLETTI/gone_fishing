@@ -1,34 +1,32 @@
 <?php
 
-include_once("AFish.php");
+include("AFish.php");
 
-class Gudgeon extends Afish
-{
+class Gudgeon extends AFish {
     function __construct()
     {
         $this->name = "Gudgeon";
         $this->weight = (rand (15, 220)/1000);
     }
     
-    public function fishbite($catchMessage)
-    {
-        echo($catchMessage);
-    }
+    // public function fishbite()
+    // {
+    //     echo $this->catchMessage;
+    // }
     
 }
 
-class Minnow extends Afish
-{
+class Minnow extends AFish {
     function __construct()
     {
         $this->name = "Minnow";
         $this->weight = (rand (15, 220)/1000);
     }
     
-    public function fishbite($catchMessage)
-    {
-        echo($catchMessage);
-    }
+    // public function fishbite()
+    // {
+    //     echo $this->catchMessage;
+    // }
     
 }
 

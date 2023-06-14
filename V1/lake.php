@@ -1,7 +1,8 @@
 <?php
-include_once("small.php");
+include("small.php");
 
-$lake = array(new Gudgeon,new Minnow);
-
-print_r($lake)
+$lake = array(
+    new Gudgeon(),
+    new Minnow()
+    );
 ?>
