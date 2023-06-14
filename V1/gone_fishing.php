@@ -15,8 +15,6 @@ abstract class AFish
         $this->weight = $fishWeight;
         $this->catchMessage = "You caught a nice " . $this->weight . " kg " . $this->name . "!" . PHP_EOL;
     }
-
-    // abstract public function fishbite();
 }
 
 $lake = array(
@@ -30,13 +28,7 @@ $lake = array(
         {
             $this->name = "Gudgeon";
             $this->weight = (rand (15, 220)/1000);
-        }
-        
-        // public function fishbite()
-        // {
-        //     echo $this->catchMessage;
-        // }
-        
+        }        
     }
     
     class Minnow extends AFish {
@@ -45,22 +37,15 @@ $lake = array(
             $this->name = "Minnow";
             $this->weight = (rand (15, 220)/1000);
         }
-        
-        // public function fishbite()
-        // {
-        //     echo $this->catchMessage;
-        // }
-        
     }
 
-    class Ruffe extends Afish
-{
+    class Ruffe extends AFish {
     function __construct()
     {
-        $this->fishName = "Ruffe";
-        $this->fishWeight = (rand (15, 220)/1000);
+        $this->name = "Ruffe";
+        $this->weight = (rand (15, 220)/1000);
     }
-}
+    }
 
     $randomFish = $lake[array_rand($lake)];
     $catchMessage = "You caught a nice " . $randomFish->getWeight() . " kg " . $randomFish->getName() . "!" . PHP_EOL;
