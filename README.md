@@ -17,4 +17,5 @@ All data comes from [Farnham Angling Society](https://www.farnhamanglingsociety.
 2. On your computer, open a terminal and go to the cloned repository and V1 folder.
 3. Run the program using the command ``` php gone_fishing.php ```
 4. The result should look like this :
-![Screenshot from 2023-06-15 12-37-33](https://github.com/dinoBALLETTI/gone_fishing/assets/124468096/2f928cf4-549b-471d-9618-87dc8a82829a)
+![Screenshot from 2023-06-15 12-41-15](https://github.com/dinoBALLETTI/gone_fishing/assets/124468096/74d73e6c-184b-4242-8079-fa612c0acf7e)
+
