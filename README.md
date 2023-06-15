@@ -14,6 +14,6 @@ All data comes from [Farnham Angling Society](https://www.farnhamanglingsociety.
 
 ## How to fish
 1. Clone this repository on your computer.
-2. On your computer, open a terminal and go to the cloned repository
+2. On your computer, open a terminal and go to the cloned repository and V1 folder.
 3. Run the program using the command ``` php gone_fishing.php ```
 
