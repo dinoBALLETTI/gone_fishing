@@ -1,4 +1,7 @@
 <?php
+include("small.php");
+include("medium.php");
+include("large.php");
 
 abstract class AFish 
 {
@@ -17,40 +20,13 @@ abstract class AFish
     }
 }
 
-$lake = array(
-    new Gudgeon(),
-    new Minnow(),
-    new Ruffe(),
-    );
+$river = array(
+    new Gudgeon(), new Minnow(), new Ruffe(), new Bleak(), new StoneLoach(), new Bullhead(), new Stickleback(), new Dace(),
+    new Perch(), new Roach(), new Rudd(), new Eel(), new Barbel(), new Bream(), new Tench(), new Chub(), new Grayling(),
+    new Pike(), new Carp(), new GrassCarp(), new Catfish()
+);
 
-    class Gudgeon extends AFish 
-    {
-        function __construct()
-        {
-            $this->name = "Gudgeon";
-            $this->weight = (rand (15, 220)/1000);
-        }        
-    }
-    
-    class Minnow extends AFish 
-    {
-        function __construct()
-        {
-            $this->name = "Minnow";
-            $this->weight = (rand (15, 220)/1000);
-        }
-    }
-
-    class Ruffe extends AFish 
-    {
-        function __construct()
-        {
-        $this->name = "Ruffe";
-        $this->weight = (rand (15, 220)/1000);
-        }
-    }
-
-    $randomFish = $lake[array_rand($lake)];
-    $catchMessage = "You caught a nice " . $randomFish->getWeight() . " kg " . $randomFish->getName() . "!" . PHP_EOL;
-    echo $catchMessage;
+$randomFish = $river[array_rand($river)];
+$catchMessage = "You caught a nice " . $randomFish->getWeight() . " kg " . $randomFish->getName() . "!" . PHP_EOL;
+echo $catchMessage;
 ?>
