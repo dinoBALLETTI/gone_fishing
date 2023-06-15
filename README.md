@@ -15,5 +15,5 @@ All data comes from https://www.farnhamanglingsociety.com/species/
 HOW TO FISH
 1. Clone this repository on your computer.
 2. On your computer, open a terminal and go to the cloned repository
-3. Run the program using the command php gone_fishing.php
+3. Run the program using the command ``` php gone_fishing.php ```
 
